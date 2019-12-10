@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TV maze</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body >
+<header class="header">
+    <div class="main-header">
+        <a href="index.html" class="logo">
+            <img src="index.png" title="TV Maze" alt="tv_maze">
+        </a>
+        <form action="search.html" class="search-form"><label ><span>Search:</span><input name="search"  class="input" placeholder="Search..."></label><button type="submit">
+            <img src="search.png" alt="search">
+        </button>
+        </form>
+    </div>
+
+    <nav class="nav">
+        <ul>
+            <li class="main-nav"><a href="#">Show</a>
+                <ul class="dropdown">
+                    <li class="dropdown-nav"><a href="#">comady</a></li>
+                    <li class="dropdown-nav"><a href="#">Drama</a></li>
+                    <li class="dropdown-nav-right">
+                        <a href="#">Actor</a>
+                        <ul class="inside-dropdown">
+                            <li class="right-dropdown">Will smite</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="main-nav"><a href="#">People</a>
+                <ul class="dropdown">
+                    <li class="dropdown-nav"><a href="#">Celeb</a></li>
+                    <li class="dropdown-nav"><a href="#">other</a></li>
+                </ul>
+                    </li>
+            <li class="main-nav"><a href="#">Networks</a></li>
+            <li class="main-nav"><a href="#">Web Channel</a></li>
+            <li class="main-nav"><a href="#">Articals</a></li>
+            <li class="main-nav"><a href="#">Schedule</a></li>
+            <li class="main-nav"><a href="#">Calender</a></li>
+            <li class="main-nav"><a href="#">Forums</a></li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+    <section class="grid-container">
+        <h1 class="h1">SHOWS</h1>
+        <div class="cards">
+            <div class="shows-box">
+
+            </div>
+        </div>
+        <script src="featch-api.js"></script>
+
+        <div class="form">
+            <h1 >Form</h1>
+            <form>
+
+
+<!--                <label for="text">name:</label>-->
+                <input type="text" name="name" value="" placeholder="name" ><br>
+<!--                <label for="text">Last-Name:</label>-->
+                <input name="last-name" type="text" placeholder="Last Name"><br>
+<!--                <label for="email">Email:</label>-->
+                <input name="email" type="email" placeholder="Email"><br>
+                <label for="password">Password:</label>
+                <input name="password" type="password" placeholder="Password"><br>
+                <label for="select">Gender:</label>
+                <select name="select" >
+                    <option value="1">man</option>
+                    <option value="2">Woman</option>
+                    <option value="3">Other</option>
+                </select><br>
+                <p></p><br>
+                <input type="submit" value="Send" />
+
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div>Footer Footer Footer Footer Footer Footer</div>
+
+    </footer>
+</main>
+
+<script src="featch-api.js"></script>
+<script src="robarcko.js"></script>
+
+
+</body>
+</html>

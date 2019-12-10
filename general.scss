@@ -1,0 +1,161 @@
+
+$background-color: black;
+
+
+
+* {
+  box-sizing: border-box;
+}
+html , body{
+  margin:0;
+  padding: 0;
+}
+header{
+  background-color: #070a10;
+  padding: 5px ;
+  /*position: fixed;*/
+  nav{
+    padding-bottom: 10px;
+    background: #3C948B;
+    height: 50px;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding:10px;
+
+  }
+}
+.logo{
+  display: inline-block;
+  margin-right:50px;
+  vertical-align: middle;
+
+    img {
+      width: 150px;
+      margin-left: 80px;
+    }
+
+}
+.search-form{
+  display: inline-block;
+  width:calc(50% - 180px);
+  max-width: 500px;
+  > *{
+    vertical-align:middle;
+  }
+  label span{
+    display:none;
+  }
+  label input{
+    height:40px;
+    border:none;
+    border-radius:26px 0 0 25px;
+    width:calc(100% - 100px);
+    font-size: 16px;
+    padding-left: 30px;
+
+
+  }
+  label input{
+    ::placeholder{
+      font-style:italic;
+    }
+    :focus{
+      outline:none;
+      box-shadow: 0 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+    }
+  }
+  button {
+    background-color: #49639d;
+    height: 40px;
+    border: none;
+    width: 60px;
+    cursor: pointer;
+    transition: background-color ease 0.5s;
+    border-radius: 0 25px 25px 0;
+
+    &:hover {
+      background-color: #298c9d;
+
+    }
+  }
+  img{
+    height: 20px;
+
+
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+  }
+}
+  .main-nav {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+
+    .dropdown {
+      display: none;
+    }
+
+    &:hover {
+      transition: background-color ease 0.5s;
+      background-color: white;
+
+
+      .dropdown {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background-color: lavender;
+        line-height: 2;
+
+
+        .right-dropdown{
+          display: none;
+        }
+        .dropdown-nav-right{
+          &:hover{
+            transition: background-color ease 1s;
+            background-color: white;
+
+            .right-dropdown{
+              display: block;
+              position: absolute;
+              left: 100%;
+              top: 100px;
+              background-color: lavender;
+              width: fit-content;
+
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+@media (min-width:400px) {
+div{
+  font-size: 30px;
+}
+}
+
+
+
+
+
+
